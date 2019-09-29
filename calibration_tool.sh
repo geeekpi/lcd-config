@@ -56,7 +56,7 @@ calibrate(){
     export -n DISPLAY
   else
     echo "The calibration process does not finished properly, please try again!" 
-    sudo bash /home/pi/52Pi/calibrator.sh
+    sudo bash /home/pi/lcd-config/calibration_tool.sh
   fi
 }
 
