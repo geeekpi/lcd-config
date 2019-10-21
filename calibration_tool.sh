@@ -115,7 +115,7 @@ dialog --backtitle "GeeekPi Touch Screen Calibrator Configure Panel" --textbox "
 
 #Clear the screen buffer when exit the script.
 clear_window(){
-dialog --msgbox "Configuration is compelete!" 20 80 --begin 10 70 --yesno "Do you want to reboot your system?" 20 60
+dialog --msgbox "Configuration is compelete!" 20 80 --begin 20 10 --yesno "Do you want to reboot your system?" 20 60
 if [ $? -eq 0 ];then
    sudo sync && sudo reboot
 elif [ $? -eq 255 ];then
